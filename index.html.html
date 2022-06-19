@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+ <html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS Flexbox| Zuri task</title>
+  <link rel="stylesheet" type="text/css" href="C:\Users\Bassey\Desktop\Practice\css\all.css" rel="stylesheet">
+  <style type="text/css">
+  	* {
+  		box-sizing: border-box;
+  		padding: 0;
+  		margin: 0;
+	}
+	html {
+  		font-size: 18px;
+	} 
+
+	@media screen and (max-width: 1440px){
+		.woah{
+			background-color: hsl(193, 100%, 96%);
+			padding-top: 30px;
+			padding-bottom: 50px;
+		}
+
+		.huddle{
+			display: flex;
+			flex-direction: row;
+		}
+
+		.huddle h1{
+			align-items: left;
+			padding-left: 25px;
+			padding-right: 500px;
+			padding-bottom: 30px;
+		}
+
+		.huddle button{
+			align-items: right;
+			position: absolute;
+			right: 15px;
+			margin-left: 500px;
+			padding-top: 5px;
+			padding-right: 20px;
+			padding-bottom: 5px;
+			padding-left: 20px;
+			border-radius: 9px;
+			border: none;
+			background-color: white;
+			cursor: pointer;
+		}
+
+		.build{
+			display: flex;
+			flex-direction: row;
+			padding-left: 25px;
+			width: 100%;
+			padding-bottom: 15px;
+			align-items: center;
+			margin-left: 40px;
+			color: hsl(192, 100%, 9%)
+		}
+
+		.build button{
+			background-color: hsl(322, 100%, 66%);
+			color: white;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			border: none;
+			border-radius: 6px;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+
+		.build img{
+			width: 496px;
+			height: 370px;
+			align-items: center;
+			justify-content: center;
+			margin-left: 400px;
+			margin-right: 70px;
+		}
+
+		.hey{
+			margin-top: 80px;
+			border-radius: 9px;
+			padding-left: 50px;
+			padding-right: 50px;
+			border: 1px solid white;
+			box-shadow: 5px 6px 5px 6px #888888;
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+
+		.grow{
+			display: flex;
+			flex-direction: row;
+			padding-top: 70px;
+			align-items: center;
+		}
+
+		.grow h2{
+			margin-bottom: 18px;
+			color: hsl(192, 100%, 9%);
+		}
+
+		.grow p{
+			color: grey;
+		}
+
+		.flow{
+			display: flex;
+			flex-direction: row;
+			margin-top: 50px;
+			align-items: center;
+		}
+
+		.flow h2{
+			margin-bottom: 18px;
+			color: hsl(192, 100%, 9%);
+		}
+
+		.flow p{
+			color: grey;
+		}
+
+		.users{
+			display: flex;
+			flex-direction: row;
+			margin-top: 50px;
+			align-items: center;
+			padding-bottom: 20px
+		}
+
+		.users h2{
+			margin-bottom: 18px;
+			color: hsl(192, 100%, 9%);
+		}
+
+		.users p{
+			color: grey;
+		}
+
+		.ready{
+			text-align: center;
+			margin-top: 60px
+			padding-top: 25px;
+			padding-bottom: 25px;
+			border: 1px solid white;
+			box-shadow: 5px 6px 5px 6px #b6c3c6;
+			border-radius: 5px;
+			width: 45%;
+			margin-left: 25%;
+			position: absolute;
+			top: 70px;
+			z-index: 9;
+			background-color: white
+		}
+
+		.ready h2{
+			color: hsl(192, 100%, 9%);
+			margin-bottom: 13px;
+			margin-top: 20px;
+			margin-left: 35px;
+			margin-right: 35px
+		}
+
+		.ready button{
+			background-color: hsl(322, 100%, 66%);
+			color: white;
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			border: none;
+			border-radius: 25px;
+			margin-top: 20px;
+			cursor: pointer;
+			margin-bottom: 20px;
+		}
+
+		.new{
+			position: absolute;
+			width: 100%;
+		}
+
+		.key{
+			background: hsl(192, 100%, 9%);
+			position: relative;
+			top: 170px;
+			height: 500px;
+
+		}
+
+		.sha{
+			color: white;
+			padding-left: 50px
+		}
+
+		.key .sha i{
+			color: white;
+			margin-top: 180px
+			padding-right: 6px;
+		}
+
+		.key .sha {
+			display: flex;
+			flex-direction: row
+		}
+
+		.key h1{
+			padding-left: 50px;
+			color: white;
+			margin-top: 180px
+		}
+
+		.secondhuddle {
+			display: flex;
+			flex-direction: row;
+			padding-top: 20px
+			color: white;
+		}
+
+		.secondhuddle p{
+			color: white;
+			margin-left: 50px;
+			margin-bottom: 30px
+		}
+
+		.secondhuddle div{
+			width: 25%
+		}
+
+		.fourth{
+			color: white;
+			padding-left: 50px
+		}
+
+		.fourth div{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			margin: 0 auto; 
+			margin-bottom: 14px;
+		}
+
+		.fourth div p{
+			padding-left: 10px
+			padding-right: 20px;
+		}
+
+		.fourth div i{
+			padding-right: 5px;
+			color: white;
+		}
+		i{
+			color: white;
+			font-weight: 400;
+			margin-top:5px;
+			margin-bottom: 20px;
+			margin-right: 15px;
+		}
+		
+  </style>
+</head>
+
+<body>
+	<!-- # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 600
+
+### Body, Call-to-actions
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)-->
+<section class="woah">
+	<div class="huddle">
+		<i class="fa-thin fa-comment-dots"></i><h1>Huddle</h1>
+		<button>Try it Free</button>
+    </div>
+    <div class="build">
+    	<div>
+			<h2>Build The Community Four Fans Would Love</h2>
+			<p>Huddle reimagines the way we build communities. You have a voice, but so does your audience. Create connection with your users as you engage in genuine discussion.</p>
+			<button>Get Started For Free</button>
+		</div>
+		<img src="IMG_20220617_133855.jpg">
+    </div>
+	
+</section>
+<section class="hey">
+	<div class="grow">
+		<div>
+			<h2>Grow Together</h2>
+			<p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+		</div>
+		<img src="IMG_20220617_133830.jpg">
+	</div>
+	<div class="flow">
+		<img src="IMG_20220617_133806.jpg">
+		<div>
+			<h2>Flowing Conversations</h2>
+			<p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a full natural flow.</p>
+		</div>
+	</div>
+	<div class="users">
+		<div>
+			<h2>Your Users</h2>
+			<p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+		</div>
+		<img src="IMG_20220617_133738.jpg">
+	</div>
+</section>
+<section class="new">
+	<div class="key">
+		<div class="sha">
+		<i class="fa-thin fa-comment-dots"></i><h1>Huddle</h1></div>
+		<div class="secondhuddle">
+			<div class="fourth">
+				<div>
+				<i class="fa-solid fa-location-dot" ></i>&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum dolor sed placerat viverra. Praesent vitae molestie odio, non iaculis velit.</div><br>
+				<i class="fa-solid fa-phone-volume"></i> +234-906-058-5494 <br>
+				<i class="fa-solid fa-envelope"></i>&nbsp;preciousasuquo6@gmail.com
+			</div>
+			<div>
+				<p>About us</p>
+				<p>What We Do</p>
+				<p>FAQ</p>
+			</div>
+			<div>
+				<p>Career</p>
+				<p>Blog</p>
+				<p>Contact Us</p>
+			</div>
+			<div>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-instagram"></i>
+			</div>
+		</div>
+	</div>
+	<div class="ready">
+			<h2>Ready To Build Your Community?</h2>
+			<button>Get Started For Free</button>
+	</div>
+
+	
+</section>
+<section>
+	
+</section>
+
+</body>
+</html>
