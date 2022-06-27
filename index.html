@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>CSS Flexbox| Zuri task</title>
-  <link rel="stylesheet" type="text/css" href="C:\Users\Bassey\Desktop\Practice\css\all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="C:\Users\Bassey\Desktop\Practice\fontawesome-free-6.1.1-web\css\all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <style type="text/css">
   	* {
   		box-sizing: border-box;
@@ -23,6 +25,10 @@
 			padding-bottom: 50px;
 		}
 
+		.woah p{
+			font-weight: 700
+		}
+
 		.huddle{
 			display: flex;
 			flex-direction: row;
@@ -30,9 +36,10 @@
 
 		.huddle h1{
 			align-items: left;
-			padding-left: 25px;
+			padding-left: 6px;
 			padding-right: 500px;
 			padding-bottom: 30px;
+
 		}
 
 		.huddle button{
@@ -74,6 +81,11 @@
 			cursor: pointer;
 		}
 
+		.build h2{
+			margin-bottom: 19px;
+			letter-spacing: 2px
+		}
+
 		.build img{
 			width: 496px;
 			height: 370px;
@@ -92,6 +104,10 @@
 			box-shadow: 5px 6px 5px 6px #888888;
 			margin-left: 50px;
 			margin-right: 50px;
+		}
+
+		.hey p{
+			font-weight: 400;
 		}
 
 		.grow{
@@ -186,6 +202,10 @@
 			width: 100%;
 		}
 
+		.new p{
+			font-weight: 400
+		}
+
 		.key{
 			background: hsl(192, 100%, 9%);
 			position: relative;
@@ -207,11 +227,25 @@
 
 		.key .sha {
 			display: flex;
-			flex-direction: row
+			flex-direction: row;
+		}
+
+		.sha .fa-comment-dots{
+			font-size: 1.5rem;
+			margin-top: 186px;
+			padding-right: 6px;
+			background: none;
+		}
+
+		.huddle .fa-comment-dots{
+			color: hsl(322, 100%, 66%);
+			padding-left: 60px;
+			font-size: 1.8rem;
+			display: inline-block;
 		}
 
 		.key h1{
-			padding-left: 50px;
+			padding-left: 6px;
 			color: white;
 			margin-top: 180px
 		}
@@ -262,6 +296,317 @@
 			margin-bottom: 20px;
 			margin-right: 15px;
 		}
+
+		h1 h2{
+			font-family: "Poppins", sans-serif;
+			font-weight: 600
+		}
+
+		p{
+			font-family: "Open Sans", sans-serif;
+			font-size: 18px;
+		}
+	}
+
+	@media screen and (max-width: 375px){
+		.woah{
+			width: 375px;
+			padding-top: 30px;
+			padding-bottom: 50px;
+			background-color: hsl(193, 100%, 96%);
+		}
+
+		.key{
+			width: 100%;
+			background: hsl(192, 100%, 9%);
+			position: relative;
+			top: 170px;
+			height: 500px;
+		}
+
+		.woah p{
+			font-weight: 700
+		}
+
+		.huddle{
+			display: flex;
+			flex-direction: row;
+		}
+
+		.huddle h1{
+			align-items: left;
+			padding-left: 6px;
+			padding-right: 500px;
+			padding-bottom: 30px;
+
+		}
+
+		.huddle button{
+			align-items: right;
+			position: absolute;
+			right: 15px;
+			margin-left: 500px;
+			padding-top: 5px;
+			padding-right: 20px;
+			padding-bottom: 5px;
+			padding-left: 20px;
+			border-radius: 9px;
+			border: none;
+			background-color: white;
+			cursor: pointer;
+		}
+
+		.build{
+			display: flex;
+			flex-direction: row;
+			padding-left: 25px;
+			width: 100%;
+			padding-bottom: 15px;
+			align-items: center;
+			margin-left: 40px;
+			color: hsl(192, 100%, 9%)
+		}
+
+		.build button{
+			background-color: hsl(322, 100%, 66%);
+			color: white;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			border: none;
+			border-radius: 6px;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+
+		.build h2{
+			margin-bottom: 19px;
+			letter-spacing: 2px
+		}
+
+		.build img{
+			width: 496px;
+			height: 370px;
+			align-items: center;
+			justify-content: center;
+			margin-left: 400px;
+			margin-right: 70px;
+		}
+
+		.hey{
+			margin-top: 80px;
+			border-radius: 9px;
+			padding-left: 50px;
+			padding-right: 50px;
+			border: 1px solid white;
+			box-shadow: 5px 6px 5px 6px #888888;
+			margin-left: 50px;
+			margin-right: 50px;
+			width: 100%;
+		}
+
+		.hey p{
+			font-weight: 400;
+		}
+
+		.grow{
+			display: flex;
+			flex-direction: row;
+			padding-top: 70px;
+			align-items: center;
+		}
+
+		.grow h2{
+			margin-bottom: 18px;
+			color: hsl(192, 100%, 9%);
+		}
+
+		.grow p{
+			color: grey;
+		}
+
+		.flow{
+			display: flex;
+			flex-direction: row;
+			margin-top: 50px;
+			align-items: center;
+		}
+
+		.flow h2{
+			margin-bottom: 18px;
+			color: hsl(192, 100%, 9%);
+		}
+
+		.flow p{
+			color: grey;
+		}
+
+		.users{
+			display: flex;
+			flex-direction: row;
+			margin-top: 50px;
+			align-items: center;
+			padding-bottom: 20px
+		}
+
+		.users h2{
+			margin-bottom: 18px;
+			color: hsl(192, 100%, 9%);
+		}
+
+		.users p{
+			color: grey;
+		}
+
+		.ready{
+			text-align: center;
+			margin-top: 60px
+			padding-top: 25px;
+			padding-bottom: 25px;
+			border: 1px solid white;
+			box-shadow: 5px 6px 5px 6px #b6c3c6;
+			border-radius: 5px;
+			width: 45%;
+			margin-left: 25%;
+			position: absolute;
+			top: 70px;
+			z-index: 9;
+			background-color: white
+		}
+
+		.ready h2{
+			color: hsl(192, 100%, 9%);
+			margin-bottom: 13px;
+			margin-top: 20px;
+			margin-left: 35px;
+			margin-right: 35px
+		}
+
+		.ready button{
+			background-color: hsl(322, 100%, 66%);
+			color: white;
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			border: none;
+			border-radius: 25px;
+			margin-top: 20px;
+			cursor: pointer;
+			margin-bottom: 20px;
+		}
+
+		.new{
+			position: absolute;
+			width: 100%;
+		}
+
+		.new p{
+			font-weight: 400
+		}
+
+		.key{
+			background: hsl(192, 100%, 9%);
+			position: relative;
+			top: 170px;
+			height: 500px;
+
+		}
+
+		.sha{
+			color: white;
+			padding-left: 50px
+		}
+
+		.key .sha i{
+			color: white;
+			margin-top: 180px
+			padding-right: 6px;
+		}
+
+		.key .sha {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.sha .fa-comment-dots{
+			font-size: 1.5rem;
+			margin-top: 186px;
+			padding-right: 6px;
+			background: none;
+		}
+
+		.huddle .fa-comment-dots{
+			color: hsl(322, 100%, 66%);
+			padding-left: 60px;
+			font-size: 1.8rem;
+			display: inline-block;
+		}
+
+		.key h1{
+			padding-left: 6px;
+			color: white;
+			margin-top: 180px
+		}
+
+		.secondhuddle {
+			display: flex;
+			flex-direction: row;
+			padding-top: 20px
+			color: white;
+		}
+
+		.secondhuddle p{
+			color: white;
+			margin-left: 50px;
+			margin-bottom: 30px
+		}
+
+		.secondhuddle div{
+			width: 25%
+		}
+
+		.fourth{
+			color: white;
+			padding-left: 50px
+		}
+
+		.fourth div{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			margin: 0 auto; 
+			margin-bottom: 14px;
+		}
+
+		.fourth div p{
+			padding-left: 10px
+			padding-right: 20px;
+		}
+
+		.fourth div i{
+			padding-right: 5px;
+			color: white;
+		}
+		i{
+			color: white;
+			font-weight: 400;
+			margin-top:5px;
+			margin-bottom: 20px;
+			margin-right: 15px;
+		}
+
+		h1 h2{
+			font-family: "Poppins", sans-serif;
+			font-weight: 600
+		}
+
+		p{
+			font-family: "Open Sans", sans-serif;
+			font-size: 18px;
+		}
+	}
 		
   </style>
 </head>
@@ -313,12 +658,12 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 - [Ionicons](https://ionicons.com/)-->
 <section class="woah">
 	<div class="huddle">
-		<i class="fa-thin fa-comment-dots"></i><h1>Huddle</h1>
+		<i class="fa-solid fa-comment-dots"></i><h1>Huddle</h1>
 		<button>Try it Free</button>
     </div>
     <div class="build">
     	<div>
-			<h2>Build The Community Four Fans Would Love</h2>
+			<h2>Build The Community Your Fans Would Love</h2>
 			<p>Huddle reimagines the way we build communities. You have a voice, but so does your audience. Create connection with your users as you engage in genuine discussion.</p>
 			<button>Get Started For Free</button>
 		</div>
@@ -352,7 +697,7 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 <section class="new">
 	<div class="key">
 		<div class="sha">
-		<i class="fa-thin fa-comment-dots"></i><h1>Huddle</h1></div>
+		<i class="fa-solid fa-comment-dots"></i><h1>Huddle</h1></div>
 		<div class="secondhuddle">
 			<div class="fourth">
 				<div>
@@ -371,9 +716,9 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 				<p>Contact Us</p>
 			</div>
 			<div>
-				<i class="fa-brands fa-facebook"></i>
-				<i class="fa-brands fa-twitter"></i>
-				<i class="fa-brands fa-instagram"></i>
+				<a href="https://facebook.com/precious.asuquo.161446/"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://twitter.com/PreciousAsuqu12"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://instagram.com/precious4suquo"><i class="fa-brands fa-instagram"></i></a>
 			</div>
 		</div>
 	</div>
